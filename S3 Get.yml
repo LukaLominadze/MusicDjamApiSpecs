@@ -1,0 +1,34 @@
+info:
+  name: S3 Get
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: https://fss3.kabada.org:443/djam/bbfa8f06-2c91-4c29-99f4-21ed68224725?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=S6ONWS3PYVNVNH1EJM1PL/20260708/us-east-1/s3/aws4_request&X-Amz-Date=20260708T150115Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=60809c22640291de9d737b88931275ccabee35661cce0b12d871bfa817928d51
+  params:
+    - name: X-Amz-Algorithm
+      value: AWS4-HMAC-SHA256
+      type: query
+    - name: X-Amz-Credential
+      value: S6ONWS3PYVNVNH1EJM1PL/20260708/us-east-1/s3/aws4_request
+      type: query
+    - name: X-Amz-Date
+      value: 20260708T150115Z
+      type: query
+    - name: X-Amz-Expires
+      value: "600"
+      type: query
+    - name: X-Amz-SignedHeaders
+      value: host
+      type: query
+    - name: X-Amz-Signature
+      value: 60809c22640291de9d737b88931275ccabee35661cce0b12d871bfa817928d51
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

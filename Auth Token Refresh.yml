@@ -1,0 +1,21 @@
+info:
+  name: Auth Token Refresh
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://musicdjam.kabada.org/api/auth/token/refresh
+  body:
+    type: json
+    data: |-
+      {
+        "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4MzUyODIyMywiaWF0IjoxNzgzNDQxODIzLCJqdGkiOiJhNzMxNzZkZmI5ZTA0Y2IxYWJkZGFlNmY4ODk4MTVhYyIsInVzZXJfaWQiOiI0ZmI2YjZiZi02ZjViLTQ5YmUtOGExMi1lNTNjMjA1MWQ1MTEifQ.D7gsEsGTuHtcjV1DG3ayMy9VILtCgivLlnDgR8PkzKE"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

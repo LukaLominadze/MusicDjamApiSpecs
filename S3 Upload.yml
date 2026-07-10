@@ -1,0 +1,40 @@
+info:
+  name: S3 Upload
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: https://fss3.kabada.org:443/djam/bbfa8f06-2c91-4c29-99f4-21ed68224725?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=S6ONWS3PYVNVNH1EJM1PL/20260708/us-east-1/s3/aws4_request&X-Amz-Date=20260708T141839Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=343d9885fade8a30e7ec70eb7f4da6927cbc6f2b24ccc3fc65b682279184a4cf
+  params:
+    - name: X-Amz-Algorithm
+      value: AWS4-HMAC-SHA256
+      type: query
+    - name: X-Amz-Credential
+      value: S6ONWS3PYVNVNH1EJM1PL/20260708/us-east-1/s3/aws4_request
+      type: query
+    - name: X-Amz-Date
+      value: 20260708T141839Z
+      type: query
+    - name: X-Amz-Expires
+      value: "600"
+      type: query
+    - name: X-Amz-SignedHeaders
+      value: host
+      type: query
+    - name: X-Amz-Signature
+      value: 343d9885fade8a30e7ec70eb7f4da6927cbc6f2b24ccc3fc65b682279184a4cf
+      type: query
+  body:
+    type: file
+    data:
+      - filePath: /Users/gohan/Downloads/spongeboob.jpg.avif
+        contentType: image/jpeg
+        selected: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

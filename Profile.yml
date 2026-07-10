@@ -1,0 +1,22 @@
+info:
+  name: Profile
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: https://musicdjam.kabada.org/api/profile/?username=example
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzNTIyODgxLCJpYXQiOjE3ODM1MjI1ODEsImp0aSI6ImNhZDM0NDBmZDczMzQzNzI4NWEyM2NlYTVlNTU0YmYzIiwidXNlcl9pZCI6IjRmYjZiNmJmLTZmNWItNDliZS04YTEyLWU1M2MyMDUxZDUxMSJ9.XUyTXe-qbpShgsW9-ApSyw99C2FTWHjM4AiPMj-IW6s
+  params:
+    - name: username
+      value: example
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

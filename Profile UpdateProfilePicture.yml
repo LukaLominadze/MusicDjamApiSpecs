@@ -1,0 +1,24 @@
+info:
+  name: Profile UpdateProfilePicture
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: https://musicdjam.kabada.org/api/profile/update-profile-picture/
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzNTIwNDg1LCJpYXQiOjE3ODM1MjAxODUsImp0aSI6ImM1ZWFjZTZmMDgzMDQwNGZhOWE3NGQzYTQ1OWQ1MTU3IiwidXNlcl9pZCI6IjRmYjZiNmJmLTZmNWItNDliZS04YTEyLWU1M2MyMDUxZDUxMSJ9.cVZigk_f1V75xfZ69PtME9Btx6zW8e4Gi1NITGdvCu4
+  body:
+    type: json
+    data: |-
+      {
+        "file_type": "image/jpeg"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
